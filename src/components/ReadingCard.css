@@ -1,0 +1,18 @@
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: #17244E; 
+  transform: translateY(-5px);
+}
