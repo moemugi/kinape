@@ -5,17 +5,24 @@ import MonitoringScreen from "./screens/MonitoringScreen";
 
 export default function App() {
   return (
-    <div
-      style={{
+    <div style={{
         display: "flex",
-        height: "100vh",
+        minHeight: "100vh",
         background: `linear-gradient(135deg, ${Colors.gradientBackground[0]}, ${Colors.gradientBackground[1]})`,
       }}
     >
       <SideBar />
-      <MonitoringScreen/>
-
-      <div style={{ flex: 1 }} />
+      
+      <main style={{ 
+        flex: 1, 
+        marginLeft: "150px", 
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: "20px"
+      }}>
+        <MonitoringScreen />
+      </main>
     </div>
   );
 }

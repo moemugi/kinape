@@ -8,14 +8,17 @@ export default function ReadingCard() {
     {
       title: "Acidity",
       desc: "wip",
+      data: "--"
     },
     {
       title: "Total Dissolved Solids",
       desc: "wip",
+      data: "--"
     },
     {
       title: "Temperature",
       desc: "wip",
+      data: "--"
     },
   ];
 
@@ -40,6 +43,9 @@ export default function ReadingCard() {
                     </h3>
                     <p style={{ color: Colors.white, fontFamily: Defaults.fontFamily }}>
                       {item.desc}
+                    </p>
+                    <p style={{ color: Colors.white, fontFamily: Defaults.fontFamily }}>
+                      {item.data}
                     </p>
                   </div>
                 ))}
