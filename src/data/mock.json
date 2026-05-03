@@ -1,0 +1,40 @@
+{
+  "device": {
+    "id": "DEV-001",
+    "name": "Device 1",
+    "location": "Lab 1",
+    "status": "active"
+  },
+
+  "readings": {
+    "acidity": {
+      "value": 6.2,
+      "unit": "pH"
+    },
+    "tds": {
+      "value": 320,
+      "unit": "ppm"
+    },
+    "temperature": {
+      "value": 92,
+      "unit": "°C"
+    }
+  },
+
+  "factors": {
+    "acidityWeight": 0.4,
+    "tdsWeight": 0.35,
+    "temperatureWeight": 0.25,
+
+    "idealRanges": {
+      "acidity": { "min": 6.0, "max": 6.8 },
+      "tds": { "min": 250, "max": 350 },
+      "temperature": { "min": 90, "max": 96 }
+    }
+  },
+
+  "computed": {
+    "qualityScore": 87,
+    "status": "Good"
+  }
+}
