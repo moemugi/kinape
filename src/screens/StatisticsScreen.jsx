@@ -1,4 +1,3 @@
-import React from "react";
 import {
   LineChart,
   Line,
@@ -8,6 +7,9 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import Colors from "../components/Colors";
+import React, { useState } from "react";
+import Generatebutton from "../components/Generatebutton";
+import mockData from "../data/mock.json";
 
 export default function StatisticScreen() {
   
@@ -39,6 +41,7 @@ export default function StatisticScreen() {
               strokeWidth={2}
             />
           </LineChart>
+          <Generatebutton  />
         </ResponsiveContainer>
       </div>
     </div>

@@ -1,0 +1,10 @@
+.generatebutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 40px; 
+  font-size: 1.2rem; 
+  min-width: 200px; 
+  cursor: pointer; 
+  border-radius: 8%;
+}
