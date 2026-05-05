@@ -10,6 +10,7 @@ import Colors from "../components/Colors";
 import React, { useState } from "react";
 import Generatebutton from "../components/Generatebutton";
 import mockData from "../data/mock.json";
+import Defaults from "../components/Defaults";
 
 export default function StatisticScreen() {
   
@@ -25,26 +26,31 @@ export default function StatisticScreen() {
 
   return (
     <div style={styles.container}>
-      <h1>STATISTICS SCREEN</h1>
+      
+      <h2 style={{ color: Colors.white, fontFamily: Defaults.fontFamily }}>
+        STATISTICS 
+      </h2>
 
       {/* Graph */}
-      <div style={styles.chartWrapper}>
         <ResponsiveContainer width="100%" height={300}>
-          <LineChart data={data}>
-            <XAxis dataKey="name" stroke= {Colors.white} />
-            <YAxis stroke= {Colors.white} />
-            <Tooltip />
-            <Line
-              type="monotone"
-              dataKey="value"
-              stroke= {Colors.white}
-              strokeWidth={2}
-            />
-          </LineChart>
-          <Generatebutton  />
-        </ResponsiveContainer>
+            <LineChart data={data}>
+              <XAxis dataKey="name" stroke={Colors.white} />
+              <YAxis stroke={Colors.white} />
+              <Tooltip />
+              <Line
+                type="monotone"
+                dataKey="value"
+                stroke={Colors.white}
+                strokeWidth={2}
+              />
+            </LineChart>
+          </ResponsiveContainer>
+
+          {/* Button wrapper */}
+          <div style={styles.buttonWrapper}>
+            <Generatebutton />
+          </div>
       </div>
-    </div>
   );
 }
 
@@ -57,7 +63,7 @@ const styles = {
     gap: "30px",
     width: "100%",
     maxWidth: "800px",
-    margin: "0 auto",
+    marginBottom: "80px",
   },
 
   chartWrapper: {
@@ -67,4 +73,10 @@ const styles = {
     borderRadius: "12px",
     padding: "20px",
   },
+
+  buttonWrapper: {
+  display: "flex",
+  justifyContent: "center",
+  marginTop: "20px",
+},
 };
