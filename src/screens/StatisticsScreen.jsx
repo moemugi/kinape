@@ -11,6 +11,7 @@ import React, { useState } from "react";
 import Generatebutton from "../components/Generatebutton";
 import mockData from "../data/mock.json";
 import Defaults from "../components/Defaults";
+import Devicedropdown from "../components/Devicedropdown";
 
 export default function StatisticScreen() {
   
@@ -33,6 +34,9 @@ export default function StatisticScreen() {
 
       {/* Graph */}
         <ResponsiveContainer width="100%" height={300}>
+          <div style={styles.dropdownWrapper}>
+                  <Devicedropdown />
+          </div>
             <LineChart data={data}>
               <XAxis dataKey="name" stroke={Colors.white} />
               <YAxis stroke={Colors.white} />
@@ -79,4 +83,14 @@ const styles = {
   justifyContent: "center",
   marginTop: "20px",
 },
+
+dropdownWrapper: {
+    display: "flex",
+    flexDirection: "row",
+    alignItems: "center",
+    width: "100%",
+    paddingTop: "20px",
+    justifyContent: "flex-start",
+    marginTop: "20px",
+  },
 };
