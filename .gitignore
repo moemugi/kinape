@@ -162,3 +162,4 @@ dist-ssr
 *.sln
 *.sw?
 >>>>>>> 16ca8ea ([WIP] Initial Push)
+src/components/supabase.jsx
