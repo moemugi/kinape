@@ -12,7 +12,6 @@ import React from "react";
 import Generatebutton from "../components/Generatebutton";
 import Defaults from "../components/Defaults";
 import Devicedropdown from "../components/Devicedropdown";
-import mockData from "../data/mock.json";
 import Chart from "../components/chart";
 
 export default function StatisticScreen() {
