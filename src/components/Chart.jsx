@@ -31,7 +31,7 @@ export default function Chart() {
     }
 
     const formattedData = data.map((item, index) => ({
-      time: `Reading ${index + 1}`,
+      time: `Test ${index + 1}`,
       qualityScore: item.quality_score,
     }));
 
