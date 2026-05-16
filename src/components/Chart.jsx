@@ -10,6 +10,7 @@ import Colors from "../components/Colors";
 import React from "react";
 import Defaults from "../components/Defaults";
 import mockData from "../data/mock.json";
+import { supabase } from "../components/supabase";
 
 export default function Chart() {
 

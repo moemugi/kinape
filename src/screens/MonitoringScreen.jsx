@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ReadingCard from "../components/ReadingCard";
 import Readbutton from "../components/Readbutton";
 import Devicedropdown from "../components/Devicedropdown";
-// import mockData from "../data/mock.json";
 import { supabase } from "../components/supabase";
 
 
@@ -30,7 +29,6 @@ export default function MonitoringScreen() {
   const tds = data.tds;
   const temperature = data.temperature;
 
-  // calculate score here (frontend OR backend, but we do frontend for now)
   const calc = (value, min, max) => {
     if (value >= min && value <= max) return 100;
     const range = max - min;

@@ -13,6 +13,7 @@ import Generatebutton from "../components/Generatebutton";
 import Defaults from "../components/Defaults";
 import Devicedropdown from "../components/Devicedropdown";
 import Chart from "../components/chart";
+import { supabase } from "../components/supabase";
 
 export default function StatisticScreen() {
 
