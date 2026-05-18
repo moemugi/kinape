@@ -3,11 +3,11 @@ import Colors from "./Colors";
 import "./Generatebutton.css";
 import Defaults from "./Defaults";
 
-export default function Generatebutton({ onRead }) {
+export default function Generatebutton({ onClick }) {
   return (
     <button
       className="generatebutton"
-      onClick={onRead}
+      onClick={onClick}
       style={{
         backgroundColor: Colors.white,
         fontFamily: Defaults.fontFamily,
