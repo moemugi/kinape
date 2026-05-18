@@ -2,7 +2,6 @@ import React from "react";
 import Colors from "./Colors";
 import "./ReadingCard.css";
 import Defaults from "./Defaults";
-// import data from "../data/mock.json";
 
 
 export default function ReadingCard({ readings }) {
