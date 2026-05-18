@@ -14,8 +14,17 @@ import Defaults from "../components/Defaults";
 import Devicedropdown from "../components/Devicedropdown";
 import Chart from "../components/chart";
 import { supabase } from "../components/supabase";
+import { jsPDF } from "jspdf";
 
 export default function StatisticScreen() {
+
+  const generatePDF = () => {
+    const doc = new jsPDF();
+    console.log("test");
+
+    doc.text("sample", 10, 10); 
+    doc.save("report.pdf"); 
+  };
 
   return (
     <div style={styles.container}>
@@ -31,7 +40,7 @@ export default function StatisticScreen() {
 
       {/* Button */}
       <div style={styles.buttonWrapper}>
-        <Generatebutton />
+        <Generatebutton onClick={generatePDF}/>
       </div>
     </div>
   );
